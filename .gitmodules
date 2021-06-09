@@ -1,0 +1,12 @@
+[submodule "extern/pointnet2"]
+	path = extern/pointnet2
+	url = ../../mjd3/pointnet2
+[submodule "extern/Manifold"]
+	path = extern/Manifold
+	url = ../../hjwdzh/Manifold
+[submodule "extern/kaolin"]
+	path = extern/kaolin
+	url = ../../mjd3/kaolin
+[submodule "extern/tracikpy"]
+	path = extern/tracikpy
+	url = ../../mjd3/tracikpy

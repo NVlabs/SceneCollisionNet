@@ -1,0 +1,15 @@
+output: /benchmark
+device: cuda:0
+# num_workers: 4        # Defaults to os.cpu_count() if not specified. Note: set to 0 if vis=1
+vis: 1                # output visualizations
+iterations: 1000
+
+model:
+  name: scene_coll_net
+  path: /models
+
+dataset:
+  meshes: /dataset
+  batch_size: 1
+  query_size: 64
+  trajectories: 1

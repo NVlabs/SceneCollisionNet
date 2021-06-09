@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot name="NAME">
+  <link name="NAME">
+    <visual>
+      <origin xyz="MEAN_X MEAN_Y MEAN_Z"/>
+      <geometry>
+        <mesh filename="COLLISION_OBJ" scale="SCALE SCALE SCALE"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="MEAN_X MEAN_Y MEAN_Z"/>
+      <geometry>
+        <mesh filename="GEOMETRY_OBJ" scale="SCALE SCALE SCALE"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

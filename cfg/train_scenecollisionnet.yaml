@@ -1,0 +1,43 @@
+model:
+  name: scene_coll_net
+  type: SceneCollisionNet  # Options: SceneCollisionNet or PointNetGrid
+  path: /models
+  bounds:
+    - [-0.5, -0.8, -0.06]
+    - [0.5, 0.8, 0.3]
+  vox_size: [0.125, 0.1, 0.09]
+
+trainer:
+  device: cuda:0
+  num_workers: 4          # defaults to os.cpu_count() if not specified
+  train_iterations: 1000
+  val_iterations: 250
+  epochs: 1000
+  lr: 0.001
+  momentum: 0.9
+  loss_pct: 0.1
+
+dataset:
+  meshes: /dataset
+  batch_size: 1
+  query_size: 2048
+  n_obj_points: 1024
+  n_scene_points: 32768
+  rotations: 1
+  trajectories: 64
+
+camera:
+  intrinsics:
+    frame: camera
+    fx: 616.36529541
+    fy: 616.20294189
+    cx: 310.25881958
+    cy: 236.59980774
+    skew: 0.0
+    width: 640
+    height: 480
+
+  extrinsics:
+    azimuth: [-0.2, 0.2]
+    elevation: [0.6, 1.0]
+    radius: [1.5, 2.0]

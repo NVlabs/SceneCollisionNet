@@ -1,0 +1,11 @@
+output: /benchmark
+device: cuda:0
+# num_workers: 4        # Defaults to os.cpu_count() if not specified.
+iterations: 250
+
+model:
+  name: self_coll_nn
+  path: /models
+
+dataset:
+  batch_size: 512

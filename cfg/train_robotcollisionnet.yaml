@@ -1,0 +1,16 @@
+model:
+  name: self_coll_nn
+  path: /models          # For docker container
+
+trainer:
+  device: cuda:0
+  # num_workers: 4          # defaults to os.cpu_count() if not specified
+  train_iterations: 100
+  val_iterations: 25
+  epochs: 100
+  lr: 0.001
+  momentum: 0.9
+
+dataset:
+  robot_urdf: data/panda/panda.urdf
+  batch_size: 256
