@@ -1,6 +1,9 @@
 # SceneCollisionNet
 This repo contains the code for "[Object Rearrangement Using Learned Implicit Collision Functions](https://arxiv.org/abs/2011.10726)", an ICRA 2021 paper. For more information, please visit the [project website](https://research.nvidia.com/publication/2021-03_Object-Rearrangement-Using).
 
+## License
+This repo is released under [NVIDIA source code license](LICENSE.pdf). For business inquiries, please contact researchinquiries@nvidia.com. For press and other inquiries, please contact Hector Marinez at hmarinez@nvidia.com
+
 ## Install and Setup
 Clone and install the repo (we recommend a virtual environment, especially if training or benchmarking, to avoid dependency conflicts):
 ```shell
